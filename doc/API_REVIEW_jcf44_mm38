@@ -1,0 +1,34 @@
+### API REVIEW
+#### Part 1
+
+1. What about your API/design is intended to be flexible? 
+The element/component/system design pattern is meant to be incredibly flexible, by using composition over rigid inheritance structures to create game objects that can have a variety of behaviors and interactions. For example, with inheritance, there would be a lot of duplicated code in creating both moving and static enemies, while with composition, different components would simply be added to the entity.
+
+2. How is your API/design encapsulating your implementation decisions?
+The API in regards to the player is simply one update method, which tells the engine to update. Information about the game objects would then be read from the components that the engine alters. The specific implementation of systems in the engine is completely hidden from the player. All the player can see is how those components are altered, which is all that matters to the player.
+
+3. How is your part linked to other parts of the project?
+The engine is mostly linked to the player. The game authoring environment needs to properly set up the right components, but otherwise is separate. The player runs the game loop, tells the engine when to update, and monitors the changes the engine makes indirectly.
+
+4. What exceptions (error cases) might occur in your part and how will you handle them (or not, by throwing)?
+Exceptions would occur in the set up of the components, which is done in the authoring environment. For example, an invalid filepath for a sprite would be an error. In these cases, the components would simply throw errors that the authoring environment would need to catch and display for the user.
+
+5. Why do you think your API/design is good (also define what your measure of good is)?
+The design is "good" because of how modular and flexible it is. By using an ECS design pattern, a very large number of different behaviors and interactions can be created, increasing the number of options the game maker has when creating their game. It also encapsulates the engine very nicely, and makes sure only the engine can alter these components while the game is playing.
+
+#### Part 2
+
+1. Discuss the use cases/issues that you are responsible for: are they descriptive, appropriate, reasonably sized?
+Since the engine determines all of the game's internal logic, there are a lot of use cases we are responsible for. There should probably be more to be more comprehensive.
+
+2. Estimate how long you think each will take and why. What, if anything, makes estimating these tasks uncertain?
+It will take a while to implement the engine's logic, but after that, specific use cases will be very easy to implement. Setting up the foundation is the most important part, but extensibility was a priority from the start.
+
+3. What feature/design problem are you most excited to work on?
+I am most excited to get the collision system up and running, since it has very complicated logic.
+
+4. What feature/design problem are you most worried about working on?
+I am also most worried about the collisions, since it is difficult to implement and can easily break a game.
+
+5. What major feature do you plan to implement this weekend?
+This weekend I plan to refactor the collisions and hopefully get the engine up and running.

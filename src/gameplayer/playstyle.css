@@ -1,0 +1,12 @@
+.root{
+    -fx-background-color: #b6b6b6;
+    -fx-border-color: gray;
+}
+
+.button{
+    -fx-background-color: linear-gradient(#d6d6d6, #9c9c9c);
+}
+
+.button:hover{
+    -fx-background-color: linear-gradient(#e9e9e9, #b4b4b4);
+}

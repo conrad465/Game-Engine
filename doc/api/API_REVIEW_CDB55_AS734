@@ -1,0 +1,44 @@
+AS734 CDB55
+#### Part 1
+
+1.  What about your API/design is intended to be flexible?
+    * Broke up the design into different phases. Broke it up into designing objects, ... Trying to decrease the number of dependencies while simultaneously creating a solid heirachy of classes. Tries to only handle the graphical portions and pass on the changes to functionality to all of the other groups
+    * Our design is designed to be flexible by relying heavily on reflection and inheritence. Almost every list or array is populated using inheritance and there is an entire seperate thread that we created to handle the interactions between threads so that its possible for one action to impact all of the different classes. Moreover, we created wide inheritence stuctures to deal with this.
+
+2.  How is your API/design encapsulating your implementation decisions?
+    * They use data as an intermediary. They use this to limit the amount of data they need. 
+    * We tried to limit the amount of access that our element has with other elements and the different parts of our classes had. Thus we created broadcast and broadcast listeners which essentially create another thread that runs through a controller to decide what methods need to be exectured. 
+3.  How is your part linked to other parts of the project?
+    * Their Authoring enviroment operates through data. They have a mini memory and are only ever keeping the graphics of objects. They can load through data or save through data. They use reflection to handle the interactions with other classes. 
+    * We rely on the gameEngine to determine what objects that we have the ability to create and we rely on gameData to load and save the game but we've really tried to limit the interactions.
+
+     
+7.  What exceptions (error cases) might occur in your part and how will you handle them (or not, by throwing)?
+    * Trying to process null values --> Creating a new component with empty fields
+    * Duplication --> e.x. Same ids
+    * Front End Errors --> files missing, null pointer exceptions, threadding errors etc
+    * We're trying to throw as few errors as possible. The user doesn't need to know of errors unless they need to offer an alternative value. Therefore, creating a popup to prompt this would be good.
+9.  Why do you think your API/design is _good_ (also define what your measure of good is)?
+    * Their flexibility, their structure, and their integration, limited role
+    * Our design is great because it is extremely flexible. Honestly, that's our definition of good at this point because flexibility means less of a headache in the long run. When we refactor our code we can worry about encapsulation.
+
+#### Part 2 -- Collin Brown
+
+1.  Discuss the use cases/issues that you are responsible for: are they descriptive, appropriate, reasonably sized?
+    * We broke down the tasks that our group needs to accomplished and we communicate whenever we decide to tackle each one. These tasks are reasonably sized. As of our last discussion, I'm to take lead on the gameEnvironmentView and handing all of broadcasts.
+3.  Estimate how long you think each will take and why. What, if anything, makes estimating these tasks uncertain?
+    * I think that overall it will take me close to another 15 hours of programming on this sprint. Likely, broken up in this way
+        * 15 Hours for the gameEnvironmentView
+            * 3 hours on the graphics
+            * 3 hours on the underlying data structure
+            * 2 hours on the Drag and Drop Dynamic Youtility
+            * 2 hours on interaction with the other elements
+            * 2 hours for properties handling for the objects
+            * 3 hours on Bug Fixes
+        * 3 Hours for the broadcast system
+            * 1 hours for improving the reflection and checking accesses
+            * 2 hours for helping out on the other classes
+5.  What feature/design problem are you most excited to work on?
+    * Broadcast seems super exciting
+7.  What feature/design problem are you most worried about work
+    * The GameAuthoringEnvironment seems like a nightmare

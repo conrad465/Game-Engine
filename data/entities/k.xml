@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entity game="games/thisshouldworknow/" name="k"><YAcceleration>100.0</YAcceleration><DamageLifetime>0.0</DamageLifetime><XAcceleration>0.0</XAcceleration><Sprite>8Bit.png</Sprite><Name>k</Name><Type>Roller</Type><XVelocity>0.0</XVelocity><Health>100.0</Health><YVelocity>0.0</YVelocity><DamageValue>0.0</DamageValue></Entity>

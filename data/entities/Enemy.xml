@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entity game="Patrol" name="Enemy"><Name>Enemy</Name><Sprite>8Bit.png</Sprite><XAcceleration>0.0</XAcceleration><YVelocity>0.0</YVelocity><YAcceleration>0.0</YAcceleration><DamageValue>100.0</DamageValue><Health>10.0</Health><AI/><DamageLifetime>0.0</DamageLifetime><Type>Enemy</Type><XVelocity>0.0</XVelocity></Entity>

@@ -1,0 +1,262 @@
+.root {
+	primary-color: #1CFEBA;
+	secondary-color: #7E7F7B;
+	tertiary-color: #3A3A38;
+}
+
+/*
+* =============================================================
+* Splash Screen
+* =============================================================
+*/
+.splash-screen-wrapper {
+	-fx-background-color: tertiary-color;
+}
+
+.splash-screen-button {
+	-fx-text-fill: primary-color;
+	-fx-background-color: transparent;
+	-fx-font-weight: bold;
+	-fx-font-size: 20px;
+}
+
+.splash-screen-button:hover {
+	-fx-background-color: secondary-color;
+	-fx-text-fill: black;
+}
+
+/*
+* =============================================================
+* Toolbar
+* =============================================================
+*/
+.toolbar {
+	-fx-background-color: tertiary-color;
+}
+
+.menu-button .label {
+	-fx-text-fill: primary-color;
+	-fx-font-weight: bold;
+	-fx-color: secondary-color;
+}
+
+.context-menu {
+	-fx-background-color: secondary-color;
+	-fx-color: secondary-color;
+}
+
+.menu-item {
+	-fx-background-color: secondary-color;
+	-fx-color: secondary-color;
+}
+
+.menu-item: hover {
+	-fx-background-color: tertiary-color;
+}
+
+/*
+* =============================================================
+* Properties View
+* =============================================================
+*/
+.component-form {
+	-fx-background-color: tertiary-color;
+	-fx-text-fill: primary-color;
+	-fx-padding: 5px;
+}
+
+.component-text-field {
+	-fx-background-color: secondary-color;
+	-fx-text-fill: primary-color;
+	-fx-padding: 5px;
+}
+
+.component-form-label {
+	-fx-text-fill: primary-color;
+	-fx-font-weight: bold;
+	-fx-padding: 5px;
+}
+
+/*
+* =============================================================
+* Entity View
+* =============================================================
+*/
+.entity-view {
+	-fx-background-color: tertiary-color;
+}
+
+.entity-tab {
+	-fx-background-color: tertiary-color;
+}
+
+.entity-box {
+	-fx-background-color: tertiary-color;
+}
+
+.level-view {
+	
+}
+
+.level-view-wrapper {
+	
+}
+
+.entity-builder-view, .properties-view {
+	-fx-background-color: tertiary-color;
+}
+
+.entity-builder-combo-box {
+	-fx-background-color: transparent;
+}
+
+.combo-box>.list-cell {
+	-fx-text-fill: primary-color;
+	-fx-font-weight: bold;
+}
+
+.arrow {
+	-fx-background-color: primary-color;
+	-fx-font-weight: bold;
+}
+
+.field {
+	-fx-background-color: secondary-color;
+	-fx-text-fill: primary-color;
+}
+
+.checkbox {
+	-fx-text-fill: primary-color;
+}
+
+.checkbox .box {
+	-fx-text-fill: primary-color;
+	-fx-background-color: secondary-color;
+}
+
+.checkbox:selected .mark {
+	-fx-background-color: primary-color;
+}
+
+.checkbox:selected .box {
+	-fx-background-color: secondary-color;
+}
+
+.label {
+	-fx-text-fill: primary-color;
+}
+
+.entity-builder-view-button, .button {
+	-fx-background-color: transparent;
+	-fx-font-weight: bold;
+	-fx-text-fill: primary-color;
+	-fx-stroke: primary-color;
+	-fx-stroke-width: 5;
+	-fx-background-color: secondary-color;
+}
+
+/*
+* =============================================================
+* Game Editor View
+* =============================================================
+*/
+.tab-pane .tab-header-area .tab-header-background {
+	-fx-background-color: secondary-color;
+}
+
+.tab-pane .tab {
+	-fx-background-color: #e6e6e6;
+}
+
+.tab-pane .tab:selected {
+	-fx-background-color: tertiary-color;
+}
+
+.tab-pane .tab {
+	-fx-background-color: transparent;
+}
+
+.tab .tab-label {
+	-fx-alignment: CENTER;
+	-fx-text-fill: black;
+	-fx-font-size: 12px;
+	-fx-font-weight: bold;
+	-fx-background-color: transparent;
+}
+
+.tab:selected .tab-label {
+	-fx-alignment: CENTER;
+	-fx-text-fill: primary-color;
+}
+
+.increment-button, .decrement-button {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track, .scroll-bar:vertical .track {
+	-fx-background-color: transparent;
+	-fx-border-color: transparent;
+	-fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb, .scroll-bar:vertical .thumb {
+	-fx-background-color: tertiary-color;
+	-fx-background-radius: 5em;
+}
+
+/*
+* =============================================================
+* Game Editor View
+* =============================================================
+*/
+.selection-box {
+	-fx-background-color: tertiary-color;
+}
+
+.selection-label {
+	-fx-text-fill: primary-color;
+	-fx-font-size: 15;
+}
+
+.selection-label :hover {
+	-fx-text-fill: secondary-color;
+	-fx-font-size: 15;
+}
+
+/*
+* =============================================================
+* Game Name Selector
+* =============================================================
+*/
+.name-selector {
+	-fx-background-color: tertiary-color;
+	-fx-text-fill: primary-color;
+}
+
+.name-text-box {
+	-fx-background-color: secondary-color;
+	-fx-text-fill: primary-color;
+}
+
+.name-label {
+    -fx-text-fill: primary-color;
+    -fx-font-size: 20;
+}
+
+.list-view .list-cell {
+    -fx-text-fill: primary-color;
+    -fx-font-size: 20;
+}
+    
+.list-view .list-cell:even {
+    -fx-background-color: tertiary-color;
+}
+
+.list-view .list-cell:odd {
+    -fx-background-color: secondary-color;
+}
+
+.list-view .list-cell:filled:hover {
+    -fx-text-fill: white;
+}

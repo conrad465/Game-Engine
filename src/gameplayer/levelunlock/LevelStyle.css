@@ -1,0 +1,31 @@
+.root {
+    primary-color: #1CFEBA;
+    secondary-color: #7E7F7B;
+    tertiary-color: #3A3A38;
+}
+
+.vbox {
+    -fx-background-color: tertiary-color;
+}
+
+.lockedButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: #15936c;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.unlockedButton:hover {
+    -fx-background-color: secondary-color;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+
+.unlockedButton {
+    -fx-background-color: transparent;
+    -fx-text-fill: primary-color;
+    -fx-font-weight: bold;
+    -fx-font-size: 20px;
+}
+

@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entity game="l" name="Jack"><XAcceleration>0.0</XAcceleration><Sprite>blobsprite.png</Sprite><Name>Jack</Name><Type>User</Type><DamageLifetime>0.0</DamageLifetime><XVelocity>0.0</XVelocity><Health>100.0</Health><YVelocity>0.0</YVelocity><DamageValue>0.0</DamageValue><YAcceleration>200.0</YAcceleration></Entity>

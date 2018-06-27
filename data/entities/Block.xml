@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Entity game="Brick Breaker" name="Block"><Sprite>block.png</Sprite><Score>10.0</Score><Name>Block</Name><Collidable/><Type>Block</Type><Health>10.0</Health></Entity>
