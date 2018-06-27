@@ -8,6 +8,7 @@
 *.so binary
 *.jnilib binary
 *.dylib binary
+games/* linguist-vendored
 
 # Standard to msysgit
 *.doc	 diff=astextplain
